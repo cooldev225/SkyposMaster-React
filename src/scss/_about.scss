@@ -1,0 +1,132 @@
+#about {
+  position: relative;
+
+  .event-img {
+    img {
+      border-radius: 4px;
+    }
+  }
+}
+
+.about-us {
+  background: #fff;
+
+  .video-content {
+    text-align: center;
+  }
+
+  .director {
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+    color: #d7d7d7;
+    font-style: italic;
+  }
+
+  .quote {
+    font-style: italic;
+    color: #d7d7d7;
+    padding-left: 20px;
+    border-left: 5px solid #d7d7d7;
+    text-align: left;
+  }
+}
+
+.pb-200 {
+  padding-bottom: 230px;
+}
+
+.counter-block {
+  margin-top: 80px;
+  border-radius: 10px;
+  box-shadow: rgba(16, 66, 97, 0.07) 0px 8px 20px 0px;
+
+  p {
+    margin-top: 20px;
+  }
+
+  h4 {
+    color: #fff;
+  }
+}
+
+
+.event-text {
+  padding-left: 30px;
+
+  h6 {
+    margin-bottom: 20px;
+  }
+}
+
+
+.about-block2 {
+  background: $white;
+  position: relative;
+  width: 90%;
+  margin: -60px auto 0px;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+  border-radius: 5px;
+
+  h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  i {
+    position: absolute;
+    top: 0px;
+    content: "";
+    border-radius: 100%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -31px;
+    width: 70px;
+    height: 70px;
+    background: $white;
+    font-size: 30px;
+    box-shadow: rgba(22, 53, 76, 0.08) 0px 7px 25px 0px;
+    padding-top: 10px;
+    color: $brand-green;
+  }
+}
+
+.about-page {
+  .cap-group {
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+
+    }
+
+    .image-title {
+      padding-top: 30px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  .actions {
+    padding-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-img:before {
+    display: none;
+  }
+  .event-img:after {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-us {
+    padding: 50px 0;
+  }
+}

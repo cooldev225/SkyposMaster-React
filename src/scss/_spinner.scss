@@ -1,0 +1,106 @@
+
+/* spinner */
+.spinner {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    -o-box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    -ms-box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    -webkit-box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    -moz-box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    animation: cssload-spin ease infinite 1.8s;
+    -o-animation: cssload-spin ease infinite 1.8s;
+    -ms-animation: cssload-spin ease infinite 1.8s;
+    -webkit-animation: cssload-spin ease infinite 1.8s;
+    -moz-animation: cssload-spin ease infinite 1.8s;
+  }
+  
+  @keyframes cssload-spin {
+    0%,
+    100% {
+      box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    }
+    25% {
+      box-shadow: -12px 12px rgba(223, 223, 223, 0.98), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color;
+    }
+    50% {
+      box-shadow: -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color, -12px 12px rgb(223, 223, 223);
+    }
+    75% {
+      box-shadow: 12px -12px #dfdfdf, 12px 12px $primary-color, -12px 12px #dfdfdf, -12px -12px $primary-color;
+    }
+  }
+  
+  @-o-keyframes cssload-spin {
+    0%,
+    100% {
+      box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    }
+    25% {
+      box-shadow: -12px 12px rgba(223, 223, 223, 0.98), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color;
+    }
+    50% {
+      box-shadow: -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color, -12px 12px rgb(223, 223, 223);
+    }
+    75% {
+      box-shadow: 12px -12px #dfdfdf, 12px 12px $primary-color, -12px 12px #dfdfdf, -12px -12px $primary-color;
+    }
+  }
+  
+  @-ms-keyframes cssload-spin {
+    0%,
+    100% {
+      box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    }
+    25% {
+      box-shadow: -12px 12px rgba(223, 223, 223, 0.98), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color;
+    }
+    50% {
+      box-shadow: -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color, -12px 12px rgb(223, 223, 223);
+    }
+    75% {
+      box-shadow: 12px -12px #dfdfdf, 12px 12px $primary-color, -12px 12px #dfdfdf, -12px -12px $primary-color;
+    }
+  }
+  
+  @-webkit-keyframes cssload-spin {
+    0%,
+    100% {
+      box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    }
+    25% {
+      box-shadow: -12px 12px rgba(223, 223, 223, 0.98), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color;
+    }
+    50% {
+      box-shadow: -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color, -12px 12px rgb(223, 223, 223);
+    }
+    75% {
+      box-shadow: 12px -12px #dfdfdf, 12px 12px $primary-color, -12px 12px #dfdfdf, -12px -12px $primary-color;
+    }
+  }
+  
+  @-moz-keyframes cssload-spin {
+    0%,
+    100% {
+      box-shadow: 12px 12px $primary-color, -12px 12px rgb(223, 223, 223), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223);
+    }
+    25% {
+      box-shadow: -12px 12px rgba(223, 223, 223, 0.98), -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color;
+    }
+    50% {
+      box-shadow: -12px -12px $primary-color, 12px -12px rgb(223, 223, 223), 12px 12px $primary-color, -12px 12px rgb(223, 223, 223);
+    }
+    75% {
+      box-shadow: 12px -12px #dfdfdf, 12px 12px $primary-color, -12px 12px #dfdfdf, -12px -12px $primary-color;
+    }
+  }
+  
+  /* /spinner */
+  

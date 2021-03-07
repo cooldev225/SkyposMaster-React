@@ -1,0 +1,63 @@
+image: node:12
+stages:
+    - build
+    - deploy
+
+.buildTemplate: &buildTemplate
+  stage: build
+  allow_failure: false
+  script:
+    - apt-get update -qy
+    - apt-get install -yqq zip
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - public
+      
+.deployTemplate: &deployTemplate
+  stage: deploy
+  script:
+    - cd build
+    - apt-get update -qy
+    - apt-get install -yqq jq
+    - if [[ -z "${APP_NAME}" ]]; then
+    -   export APP_NAME=$(cat package.json | jq -r .deployment)
+    - fi
+    - echo "Deployment name - ${APP_NAME} SERVER - ${SERVER}"
+    - npm install -g vercel
+    - vercel --prod --confirm --token $API_KEY -n $APP_NAME  --env SERVER=$SERVER
+  dependencies:
+    - build
+
+build:
+  <<: *buildTemplate
+  only:
+    - master
+  environment:
+    name: development
+    
+deploy:
+  <<: *deployTemplate
+  only:
+    - master
+  environment:
+    name: development   
+  dependencies:
+    - build
+    
+build_production:
+  <<: *buildTemplate
+  only:
+    - production
+  environment:
+    name: production  
+    
+deploy_production:
+  <<: *deployTemplate
+  only:
+    - production
+  environment:
+    name: production
+  dependencies:
+    - build_production

@@ -1,0 +1,375 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.section {
+  padding: 90px 90px;
+
+  .title {
+    font-size: 22px;
+    padding-bottom: 5px;
+    color: $white ;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: $base-font;
+    text-transform: capitalize;
+  }
+}
+p Link {
+  color: white !important ;
+}
+.section {
+  &.steps {
+    position: relative;
+    /* background-image: url("../images/bg.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;*/
+    background: #fafafa;
+
+    .title {
+      text-align: center;
+      color: $brand-green;
+      position: relative;
+      z-index: 1;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 60px;
+      /*text-shadow: 1px 1px rgba(32, 33, 36, 0.28);*/
+      margin-bottom: 50px;
+    }
+
+    /* &:before {
+       position: absolute;
+       content: "";
+       left: 0px;
+       top: 0px;
+       width: 100%;
+       height: 100%;
+       background: #444444;
+       opacity: 0.9;
+     }*/
+
+    .person {
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+      border: 1px solid #e9e9e9;
+      height: 100%;
+      .icon {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        background-size: cover;
+        border: 1px solid #e9e9e9;
+        flex-shrink: 0;
+        margin: 0 auto 20px auto;
+        background: #fafafa;
+        font-size: 35px;
+        color: $brand-green;
+
+        img {
+          width: 75px;
+
+          &.truck {
+            width: 65px;
+          }
+        }
+      }
+
+      .details {
+        margin-top: 5px;
+
+        .name {
+          font-size: 16px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          color: $brand-green;
+          line-height: 18px;
+        }
+
+        .role {
+          font-size: 14px;
+          font-weight: 500;
+          color: #808080;
+          line-height: 8px;
+        }
+
+        .text {
+          font-size: 14px;
+          color: $black;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  ul {
+    margin-left: 30px;
+    font-size: 17px;
+    color: $black;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.fill-bg {
+  background: #fafafa;
+}
+
+p {
+  font-size: 17px;
+  color: $black;
+  line-height: 30px;
+  margin-bottom: 20px;
+
+  a {
+    color: $brand-green !important;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.information {
+  .heading {
+    text-transform: uppercase;
+
+    .title {
+      p {
+        font-size: 22px;
+        padding-bottom: 5px;
+        color: $brand-green;
+        margin-bottom: 5px;
+        font-weight: 600;
+        line-height: 40px;
+        font-family: $base-font;
+        text-transform: capitalize;
+      }
+    }
+
+    .subtitle {
+      font-size: 27px;
+      color: $primary-color;
+    }
+  }
+
+  .image {
+    padding-right: 20px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .details {
+    /* padding-left: 40px;*/
+
+    .content {
+      font-size: 18px;
+      color: $black;
+      line-height: 28px;
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  .features {
+    .name {
+      font-size: 18px;
+      padding-bottom: 5px;
+      font-weight: bold;
+
+      p {
+        margin-bottom: 0;
+        color: $brand-green;
+      }
+    }
+
+    i {
+      font-size: 25px;
+      margin-right: 15px;
+      color: $brand-green;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .check {
+    display: flex;
+    margin-bottom: 10px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: 4px;
+      margin-left: -4px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.action {
+  margin-top: 30px;
+
+  &.center {
+    text-align: center;
+  }
+}
+
+.btn-green {
+  background: $black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.5s;
+    color: $primary-color;
+    background-color: white;
+  }
+}
+
+.form {
+  // width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 4px;
+  text-align: left;
+  margin: 12px;
+  input {
+    border: 1px solid #e9e9e9;
+    font-size: 15px;
+    height: 45px;
+    overflow: hidden;
+  }
+
+  textarea {
+    border: 1px solid #e9e9e9;
+    font-size: 15px;
+    height: 60px;
+    resize: none;
+  }
+
+  .center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  padding-bottom: 50px;
+
+  .ReactModal__Content {
+    position: relative !important;
+    top: 0 !important;
+    width: 570px;
+    height: 600px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.modal-close {
+  font-size: 40px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  color: #aaaaaa;
+  cursor: pointer;
+
+  &:hover {
+    color: #c0392b;
+  }
+}
+
+.green-text {
+  color: $brand-green;
+}
+
+
+@media (min-width: 1500px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logos {
+    width: 100%;
+  }
+}
+
+@media (max-width: 972px) {
+  .section {
+    // padding: 50px 10px;
+
+    &.steps {
+      .person {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .information {
+    .image {
+      padding: 0;
+    }
+
+    .details {
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  .ReactModal__Overlay .ReactModal__Content {
+    position: inherit !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 !important;
+  }
+
+  .logos {
+    width: 100%;
+  }
+}
